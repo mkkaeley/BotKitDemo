@@ -44,8 +44,8 @@ $export_res = Invoke-restMethod -Uri "https://bots.kore.ai/api/public/bot/st-fa3
 Invoke-WebRequest $export_res.downloadURL -OutFile fullexport.zip 
 Start-Sleep -Seconds 1.5
 
-git config --global user.email "darshanavadalia04@gmail.com"
-git config --global user.name "darshana0406"
+git config --global user.email "mkkaeley@gmail.com"
+git config --global user.name "mkkaeley"
 Expand-Archive -Path fullexport.zip -DestinationPath ./ExportBot  -Force
 
 git add .
