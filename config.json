@@ -4,7 +4,7 @@
     },
     "app": {
         "apiPrefix" : "",
-        "url": "https://dull-frogs-bake.loca.lt"
+        "url": "https://tasty-maps-smoke.loca.lt"
     },
     "validations": {
         "leastNodeVersion": 10
