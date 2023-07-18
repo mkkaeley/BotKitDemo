@@ -4,7 +4,7 @@
     },
     "app": {
         "apiPrefix" : "",
-        "url": "https://tasty-maps-smoke.loca.lt"
+        "url": "https://wicked-chairs-clean.loca.lt"
     },
     "validations": {
         "leastNodeVersion": 10
