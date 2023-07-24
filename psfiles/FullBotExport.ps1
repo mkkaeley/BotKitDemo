@@ -37,8 +37,6 @@ $export_body = '{
     "IncludeDependentTasks": true
 }'
 
-git pull
-
 $tmp=Invoke-restMethod -Uri "https://bots.kore.ai/api/public/bot/st-fa3c2d6e-128d-5e18-a60a-eca34e4a9132/export" -Method Post -Headers $export_header -Body $export_body 
 Start-Sleep -Seconds 1.5
 $export_res = Invoke-restMethod -Uri "https://bots.kore.ai/api/public/bot/st-fa3c2d6e-128d-5e18-a60a-eca34e4a9132/export/status" -Method Get -Headers $export_header 
@@ -55,12 +53,12 @@ git commit -m "Bot Files Update"
 
 git push origin main
 
-# Upload file commands
+
 # cd ExportBot
-# $upload_res_bot= curl.exe --silent -X POST https://bots.kore.ai/api/public/uploadfile -H 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLTUzYmZjNmEzLThkMTAtNTFiYS05NzZjLTVhOTMxYzg0Mzc4YSJ9.XKs7o1es4pSUIzgc9z7lZQAuZHVhif6Aq12zni8FPAw'   -H 'content-type: multipart/form-data' -F file=@botDefinition.json -F fileContext=bulkImport -F fileExtension=json  
+# $upload_res_bot= curl.exe --silent -X POST https://bots.kore.ai/api/public/uploadfile -H 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLWVmYTk1Yjc4LTc4NDYtNTQ5MC1iNzc1LTg1ODJkYTgxY2RhNSJ9.9gODvgXbG2DOtOvVfLyM2Jea-G2Tvx69C0JnbANpX7A'   -H 'content-type: multipart/form-data' -F file=@botDefinition.json -F fileContext=bulkImport -F fileExtension=json  
 # $bot_definitionid= $upload_res_bot | ConvertFrom-Json 
 
-# $upload_res_config= curl.exe --silent -X POST https://bots.kore.ai/api/public/uploadfile -H 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLTUzYmZjNmEzLThkMTAtNTFiYS05NzZjLTVhOTMxYzg0Mzc4YSJ9.XKs7o1es4pSUIzgc9z7lZQAuZHVhif6Aq12zni8FPAw'   -H 'content-type: multipart/form-data' -F file=@config.json -F fileContext=bulkImport -F fileExtension=json  
+# $upload_res_config= curl.exe --silent -X POST https://bots.kore.ai/api/public/uploadfile -H 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLWVmYTk1Yjc4LTc4NDYtNTQ5MC1iNzc1LTg1ODJkYTgxY2RhNSJ9.9gODvgXbG2DOtOvVfLyM2Jea-G2Tvx69C0JnbANpX7A'   -H 'content-type: multipart/form-data' -F file=@config.json -F fileContext=bulkImport -F fileExtension=json  
 # $bot_configid= $upload_res_config | ConvertFrom-Json 
 
 # $bot_definitionid.fileID
@@ -68,7 +66,7 @@ git push origin main
 
 
 # $import_header = @{
-#     'auth' = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLTUzYmZjNmEzLThkMTAtNTFiYS05NzZjLTVhOTMxYzg0Mzc4YSJ9.XKs7o1es4pSUIzgc9z7lZQAuZHVhif6Aq12zni8FPAw'
+#     'auth' = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLWVmYTk1Yjc4LTc4NDYtNTQ5MC1iNzc1LTg1ODJkYTgxY2RhNSJ9.9gODvgXbG2DOtOvVfLyM2Jea-G2Tvx69C0JnbANpX7A'
 #     'content-type' = 'application/json'
 # }
 
@@ -111,13 +109,13 @@ git push origin main
 # }'
 
 # Start-Sleep -Seconds 1.5
-# $import_res=Invoke-RestMethod -Uri "https://bots.kore.ai/api/public/bot/st-c99808ed-b936-5b7d-a49f-a0fad24a1a00/import" -Method Post -Body $import_body -Headers $import_header
+# $import_res=Invoke-RestMethod -Uri "https://bots.kore.ai/api/public/bot/st-c72008d0-ce30-571b-ba13-1078b89dbef4/import" -Method Post -Body $import_body -Headers $import_header
 # Start-Sleep -Seconds 1.5
 # $import_res._id
 
 # Start-Sleep -Seconds 5
 
-# import files status
+
 
 # $status_url = "https://bots.kore.ai/api/public/bot/import/status/"+$import_res._id
 # $status=Invoke-RestMethod -Uri $status_url -Headers $import_header

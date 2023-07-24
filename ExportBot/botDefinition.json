@@ -1013,7 +1013,11 @@
                     "channel": "default",
                     "createdBy": "Thu Jun 22 2023 05:40:21 GMT+0000 (Coordinated Universal Time)",
                     "createdOn": "Thu Jun 22 2023 05:42:16 GMT+0000 (Coordinated Universal Time)",
+<<<<<<< HEAD
                     "lMod": "Tue Jul 18 2023 17:12:57 GMT+0000 (Coordinated Universal Time)",
+=======
+                    "lMod": "Mon Jul 24 2023 15:37:06 GMT+0000 (Coordinated Universal Time)",
+>>>>>>> 4c25f94a69b84febeb079c783f6a5378d30356b0
                     "lModBy": "Thu Jun 22 2023 05:40:21 GMT+0000 (Coordinated Universal Time)",
                     "localeData": {
                         "en": {
@@ -1037,7 +1041,11 @@
                 "en": {}
             },
             "refId": "de007bf3-baa4-565e-9e1c-da196e02cd17",
+<<<<<<< HEAD
             "taskName": "New_Dialog",
+=======
+            "taskName": "Test",
+>>>>>>> 4c25f94a69b84febeb079c783f6a5378d30356b0
             "taskType": "intent",
             "nodeType": "dialog"
         },
@@ -1127,7 +1135,7 @@
                 "en": {}
             },
             "refId": "2ef55c26-b445-55cf-aca9-530175eb1894",
-            "taskName": "Agent_Transfer",
+            "taskName": "AgentT",
             "taskType": "intent",
             "nodeType": "dialog"
         }
@@ -1158,7 +1166,11 @@
         {
             "_id": "dc-2a56a76c-b6df-56d4-9d21-a3b7b7b58f39",
             "refId": "de007bf3-baa4-565e-9e1c-da196e02cd17",
+<<<<<<< HEAD
             "name": "New_Dialog",
+=======
+            "name": "Test",
+>>>>>>> 4c25f94a69b84febeb079c783f6a5378d30356b0
             "piiDataEnabled": false,
             "serviceNodeType": "custom",
             "type": "intent",
@@ -1167,7 +1179,11 @@
             "localeData": {
                 "en": {
                     "desc": "Test Dialog",
+<<<<<<< HEAD
                     "intent": "New Dialog"
+=======
+                    "intent": "Test"
+>>>>>>> 4c25f94a69b84febeb079c783f6a5378d30356b0
                 }
             },
             "entityFields": {
@@ -1498,6 +1514,95 @@
             "isSensitive": false
         },
         {
+            "_id": "dc-c6065eb1-577d-5519-81f0-0f94a65a342f",
+            "refId": "69ef5da2-e696-5ffb-9a8f-63912562895d",
+            "name": "Service0001",
+            "piiDataEnabled": false,
+            "endPoint": {
+                "host": "122.170.77.44",
+                "port": "8003",
+                "path": "/job/Test/build?token=test.",
+                "protocol": "http",
+                "method": "post",
+                "connectorEnabled": false,
+                "piiDataEnabled": false
+            },
+            "authRequired": false,
+            "payload": {
+                "type": "raw",
+                "value": "%7B%7D"
+            },
+            "headers": {
+                "type": "raw",
+                "value": "{}"
+            },
+            "serviceType": "rest",
+            "idp": "none",
+            "serviceNodeType": "custom",
+            "type": "service",
+            "applyDefaultTemplate": false,
+            "localeData": {
+                "en": {
+                    "label": "Service0001"
+                }
+            },
+            "entityFields": {
+                "cityAdvanced": []
+            },
+            "serviceAPITimeout": 20,
+            "spellcorrectThreshold": 0,
+            "preConditions": [],
+            "vNameSpace": [],
+            "useTaskLevelNs": true,
+            "isSensitive": false
+        },
+        {
+            "_id": "dc-c7484e87-0470-52f4-859b-dc768c4d0439",
+            "refId": "14466020-2c7f-53b6-b8f2-a200fbbcea47",
+            "name": "BotAction0001",
+            "piiDataEnabled": false,
+            "serviceNodeType": "custom",
+            "type": "botAction",
+            "nodes": [
+                {
+                    "type": "service",
+                    "nodeId": "nd-5196c00f-9acb-535a-974c-c7d55076c241",
+                    "componentId": "dc-c6065eb1-577d-5519-81f0-0f94a65a342f",
+                    "transitions": [
+                        {
+                            "default": "",
+                            "metadata": {
+                                "color": "#676767",
+                                "connId": "dummy-fd3155da-63df-4327-b583-01208d707939",
+                                "pathName": "",
+                                "pathsMap": []
+                            }
+                        }
+                    ],
+                    "positionMeta": {
+                        "left": 0,
+                        "top": 200
+                    },
+                    "level": "root"
+                }
+            ],
+            "applyDefaultTemplate": false,
+            "localeData": {
+                "en": {
+                    "desc": "",
+                    "label": "BotAction0001"
+                }
+            },
+            "entityFields": {
+                "cityAdvanced": []
+            },
+            "spellcorrectThreshold": 0,
+            "preConditions": [],
+            "vNameSpace": [],
+            "useTaskLevelNs": true,
+            "isSensitive": false
+        },
+        {
             "_id": "dc-d3eba954-0da6-5977-9eb9-a9ebadfd1564",
             "refId": "144cbc64-7368-5cd2-bb24-4304384576e4",
             "name": "InternetTroubleshooting",
@@ -1569,7 +1674,7 @@
         {
             "_id": "dc-e4cd95c3-860a-5a0b-814b-0b9f1efe84ad",
             "refId": "2ef55c26-b445-55cf-aca9-530175eb1894",
-            "name": "Agent_Transfer",
+            "name": "AgentT",
             "piiDataEnabled": false,
             "serviceNodeType": "custom",
             "type": "intent",
@@ -1578,7 +1683,7 @@
             "localeData": {
                 "en": {
                     "desc": "",
-                    "intent": "Agent Transfer"
+                    "intent": "AgentT"
                 }
             },
             "entityFields": {
@@ -1779,11 +1884,11 @@
                     }
                 }
             ],
-            "lname": "agent transfer",
+            "lname": "agentt",
             "isHidden": false,
             "localeData": {
                 "en": {
-                    "name": "Agent Transfer",
+                    "name": "AgentT",
                     "shortDesc": ""
                 }
             },
@@ -2269,6 +2374,138 @@
             ]
         },
         {
+            "_id": "dg-15aa07d9-7c46-5fe2-9073-4b1927f552b2",
+            "refId": "7078f7ab-3ce1-5abb-8a88-42c85df0b647",
+            "nodes": [
+                {
+                    "nodeOptions": {
+                        "customTags": {
+                            "session": [],
+                            "message": [],
+                            "user": []
+                        },
+                        "transitionType": "auto",
+                        "isRetriesExceeded": false,
+                        "promptOptions": "required",
+                        "reuseMarkedupPhrases": false,
+                        "interruptOptions": {
+                            "priority": "task"
+                        },
+                        "transitionMode": "initiateCurrentTask",
+                        "inputHandlingOptions": "useAsEntityValue",
+                        "reuseOptions": "1",
+                        "userInputCorrection": true,
+                        "noAutoCorrection": false,
+                        "notForReuse": false,
+                        "contextTags": [],
+                        "message": [],
+                        "errorMessage": []
+                    },
+                    "vNameSpace": [],
+                    "preConditions": [],
+                    "useTaskLevelNs": true,
+                    "nodeId": "intent0",
+                    "type": "intent",
+                    "componentId": "dc-2a56a76c-b6df-56d4-9d21-a3b7b7b58f39",
+                    "transitions": [
+                        {
+                            "default": "nd-bac-dab1fdd1-76ea-4d28-a046-f78383057aee",
+                            "metadata": {
+                                "color": "#299d8e",
+                                "connId": "dummy0"
+                            }
+                        }
+                    ],
+                    "metadata": {
+                        "left": 30,
+                        "top": 120
+                    },
+                    "positionMeta": {
+                        "left": 519.1666870117188,
+                        "top": 95.00000762939453
+                    }
+                },
+                {
+                    "nodeOptions": {
+                        "customTags": {
+                            "session": [],
+                            "message": [],
+                            "user": []
+                        },
+                        "transitionType": "auto",
+                        "isRetriesExceeded": false,
+                        "promptOptions": "required",
+                        "reuseMarkedupPhrases": false,
+                        "interruptOptions": {
+                            "priority": "task"
+                        },
+                        "transitionMode": "initiateCurrentTask",
+                        "inputHandlingOptions": "useAsEntityValue",
+                        "reuseOptions": "1",
+                        "userInputCorrection": true,
+                        "noAutoCorrection": false,
+                        "notForReuse": false,
+                        "contextTags": [],
+                        "message": [],
+                        "errorMessage": []
+                    },
+                    "vNameSpace": [],
+                    "preConditions": [],
+                    "useTaskLevelNs": true,
+                    "nodeId": "nd-bac-dab1fdd1-76ea-4d28-a046-f78383057aee",
+                    "type": "botAction",
+                    "componentId": "dc-c7484e87-0470-52f4-859b-dc768c4d0439",
+                    "transitions": [
+                        {
+                            "default": "",
+                            "metadata": {
+                                "color": "#676767",
+                                "connId": "dummy-55cae517-9d49-4428-be40-35629f15eefd",
+                                "pathName": "",
+                                "pathsMap": []
+                            }
+                        }
+                    ],
+                    "positionMeta": {
+                        "left": 518.3333129882812,
+                        "top": 239.33334350585938
+                    },
+                    "nodes": [
+                        {
+                            "type": "service",
+                            "componentId": "dc-c6065eb1-577d-5519-81f0-0f94a65a342f",
+                            "level": "root",
+                            "nodeId": "nd-5196c00f-9acb-535a-974c-c7d55076c241"
+                        }
+                    ]
+                }
+            ],
+            "lname": "test",
+            "isHidden": false,
+            "localeData": {
+                "en": {
+                    "name": "Test",
+                    "shortDesc": "Test Dialog"
+                }
+            },
+            "groups": [],
+            "isFollowUp": false,
+            "isAbandonment": false,
+            "interruptOptions": {
+                "priority": "bot"
+            },
+            "contextLifeTime": {
+                "options": "close"
+            },
+            "amendConfig": {
+                "priority": "bot"
+            },
+            "sceneRefId": "4aceed66-dc6f-5a4e-8d9f-b939f48dcf2c",
+            "vNameSpace": [
+                "045b9bbe-b347-5ba8-98e4-1345111adf3a"
+            ]
+        },
+        {
             "_id": "dg-3b2c6068-9b6a-5246-ba69-9fd1d3e4a5ec",
             "refId": "8124fc68-4f7d-58fa-94c5-29c5ec34fbf3",
             "nodes": [
@@ -2649,7 +2886,11 @@
     ],
     "scenes": [
         {
+<<<<<<< HEAD
             "_id": "sn-47074105-7f4d-52c3-ab50-f450013a5590",
+=======
+            "_id": "sn-2b2dd382-7b85-5f58-8e5a-33e956134acb",
+>>>>>>> 4c25f94a69b84febeb079c783f6a5378d30356b0
             "botstoreInfo": [
                 {
                     "type": "interactive",
@@ -2658,7 +2899,11 @@
                 }
             ],
             "components": {
+<<<<<<< HEAD
                 "snc-a82a4aab-ab34-5c67-bc93-c0971540a973": {
+=======
+                "snc-b7266731-98f5-5042-bdc8-7e0530b0f527": {
+>>>>>>> 4c25f94a69b84febeb079c783f6a5378d30356b0
                     "childs": [],
                     "parentId": null,
                     "seqId": "Id1"
@@ -2667,13 +2912,17 @@
             "currentSeqId": 1,
             "description": "",
             "dialogLinks": {
+<<<<<<< HEAD
                 "snc-a82a4aab-ab34-5c67-bc93-c0971540a973": {
+=======
+                "snc-b7266731-98f5-5042-bdc8-7e0530b0f527": {
+>>>>>>> 4c25f94a69b84febeb079c783f6a5378d30356b0
                     "dialogRefId": "83f04e93-fbc8-511e-8056-c74dce398c09"
                 }
             },
             "dialogRefId": "83f04e93-fbc8-511e-8056-c74dce398c09",
             "messageLinks": {},
-            "name": "Agent Transfer",
+            "name": "AgentT",
             "refId": "a1981541-a080-5601-9a49-aefd9d41ef3b",
             "sceneLinkedBy": [],
             "sceneLinks": {},
@@ -2685,7 +2934,7 @@
             "resourceid": "scenes"
         },
         {
-            "_id": "sn-d44946a6-e0c9-5821-b739-76af866dc7db",
+            "_id": "sn-45f8a863-d30e-5aff-84ee-244cb5607768",
             "botstoreInfo": [
                 {
                     "type": "interactive",
@@ -2694,7 +2943,7 @@
                 }
             ],
             "components": {
-                "snc-48b5bec9-20d4-5906-8632-7948ca8b2d50": {
+                "snc-98fcf737-e036-5429-81fe-1c945145048a": {
                     "childs": [],
                     "parentId": null,
                     "seqId": "Id1"
@@ -2703,7 +2952,7 @@
             "currentSeqId": 1,
             "description": "Fallback Task",
             "dialogLinks": {
-                "snc-48b5bec9-20d4-5906-8632-7948ca8b2d50": {
+                "snc-98fcf737-e036-5429-81fe-1c945145048a": {
                     "dialogRefId": "53e14338-0441-5e8a-a885-d990b771e80a"
                 }
             },
@@ -2757,6 +3006,7 @@
             "resourceid": "scenes"
         },
         {
+<<<<<<< HEAD
             "_id": "sn-91514e8e-cc60-5df0-81b3-cb06560e1a2c",
             "botstoreInfo": [
                 {
@@ -2794,6 +3044,9 @@
         },
         {
             "_id": "sn-9d59e060-77ce-5f86-9c62-b3066f3969ef",
+=======
+            "_id": "sn-916a7a74-bf2b-53c8-98ee-be25f2d18328",
+>>>>>>> 4c25f94a69b84febeb079c783f6a5378d30356b0
             "botstoreInfo": [
                 {
                     "type": "interactive",
@@ -2802,7 +3055,11 @@
                 }
             ],
             "components": {
+<<<<<<< HEAD
                 "snc-824397a0-a81a-578b-bfe1-29e87623235c": {
+=======
+                "snc-84c18c32-f3ec-5374-9717-3173cd03e57f": {
+>>>>>>> 4c25f94a69b84febeb079c783f6a5378d30356b0
                     "childs": [],
                     "parentId": null,
                     "seqId": "Id1"
@@ -2811,7 +3068,11 @@
             "currentSeqId": 1,
             "description": "",
             "dialogLinks": {
+<<<<<<< HEAD
                 "snc-824397a0-a81a-578b-bfe1-29e87623235c": {
+=======
+                "snc-84c18c32-f3ec-5374-9717-3173cd03e57f": {
+>>>>>>> 4c25f94a69b84febeb079c783f6a5378d30356b0
                     "dialogRefId": "3e83710e-f873-5944-89d9-e523eae07e53"
                 }
             },
@@ -2819,6 +3080,42 @@
             "messageLinks": {},
             "name": "PayMyBill",
             "refId": "4e429496-0f51-52ef-87a9-170fefb229d8",
+            "sceneLinkedBy": [],
+            "sceneLinks": {},
+            "sceneType": "dialogScene",
+            "status": "In Progress",
+            "streamId": "st-fa3c2d6e-128d-5e18-a60a-eca34e4a9132",
+            "tags": [],
+            "widgetThemeId": "wth-5e3e0d371dbd0c312e39726d",
+            "resourceid": "scenes"
+        },
+        {
+            "_id": "sn-06c34790-d1bb-5e1a-addd-3b7738c68bdf",
+            "botstoreInfo": [
+                {
+                    "type": "interactive",
+                    "isSecured": false,
+                    "link": "47416b6c43374e7350efbfbd6752"
+                }
+            ],
+            "components": {
+                "snc-5348be29-5fa8-591f-b168-cba21e79daf9": {
+                    "childs": [],
+                    "parentId": null,
+                    "seqId": "Id1"
+                }
+            },
+            "currentSeqId": 1,
+            "description": "Test Dialog",
+            "dialogLinks": {
+                "snc-5348be29-5fa8-591f-b168-cba21e79daf9": {
+                    "dialogRefId": "7078f7ab-3ce1-5abb-8a88-42c85df0b647"
+                }
+            },
+            "dialogRefId": "7078f7ab-3ce1-5abb-8a88-42c85df0b647",
+            "messageLinks": {},
+            "name": "Test",
+            "refId": "4aceed66-dc6f-5a4e-8d9f-b939f48dcf2c",
             "sceneLinkedBy": [],
             "sceneLinks": {},
             "sceneType": "dialogScene",
@@ -2954,6 +3251,7 @@
             "streamId": "st-fa3c2d6e-128d-5e18-a60a-eca34e4a9132"
         },
         {
+<<<<<<< HEAD
             "_id": "snc-48b5bec9-20d4-5906-8632-7948ca8b2d50",
             "state": 0,
             "msg": {
@@ -2969,6 +3267,8 @@
             "streamId": "st-fa3c2d6e-128d-5e18-a60a-eca34e4a9132"
         },
         {
+=======
+>>>>>>> 4c25f94a69b84febeb079c783f6a5378d30356b0
             "_id": "snc-345ea5ea-d40b-5261-adea-00d24cefb94d",
             "state": 0,
             "msg": {
@@ -3014,7 +3314,41 @@
             "streamId": "st-fa3c2d6e-128d-5e18-a60a-eca34e4a9132"
         },
         {
+<<<<<<< HEAD
             "_id": "snc-824397a0-a81a-578b-bfe1-29e87623235c",
+=======
+            "_id": "snc-98fcf737-e036-5429-81fe-1c945145048a",
+            "state": 0,
+            "msg": {
+                "type": "text",
+                "payload": {
+                    "text": "Dialog Conversation Started"
+                }
+            },
+            "type": "note",
+            "refId": "f753128f-d625-5668-8f7d-07c522686bdf",
+            "comments": [],
+            "sceneId": "sn-45f8a863-d30e-5aff-84ee-244cb5607768",
+            "streamId": "st-fa3c2d6e-128d-5e18-a60a-eca34e4a9132"
+        },
+        {
+            "_id": "snc-b7266731-98f5-5042-bdc8-7e0530b0f527",
+            "state": 0,
+            "msg": {
+                "type": "text",
+                "payload": {
+                    "text": "Dialog Conversation Started"
+                }
+            },
+            "type": "note",
+            "refId": "9b65a832-df59-5698-b8a3-fc35f15fa4a0",
+            "comments": [],
+            "sceneId": "sn-2b2dd382-7b85-5f58-8e5a-33e956134acb",
+            "streamId": "st-fa3c2d6e-128d-5e18-a60a-eca34e4a9132"
+        },
+        {
+            "_id": "snc-84c18c32-f3ec-5374-9717-3173cd03e57f",
+>>>>>>> 4c25f94a69b84febeb079c783f6a5378d30356b0
             "state": 0,
             "msg": {
                 "type": "text",
@@ -3025,11 +3359,19 @@
             "type": "note",
             "refId": "1d36f877-1b44-5486-961a-8f7618d20f4d",
             "comments": [],
+<<<<<<< HEAD
             "sceneId": "sn-9d59e060-77ce-5f86-9c62-b3066f3969ef",
             "streamId": "st-fa3c2d6e-128d-5e18-a60a-eca34e4a9132"
         },
         {
             "_id": "snc-63a14374-96c6-5453-a9b0-4b35f48ced60",
+=======
+            "sceneId": "sn-916a7a74-bf2b-53c8-98ee-be25f2d18328",
+            "streamId": "st-fa3c2d6e-128d-5e18-a60a-eca34e4a9132"
+        },
+        {
+            "_id": "snc-5348be29-5fa8-591f-b168-cba21e79daf9",
+>>>>>>> 4c25f94a69b84febeb079c783f6a5378d30356b0
             "state": 0,
             "msg": {
                 "type": "text",
@@ -3040,6 +3382,7 @@
             "type": "note",
             "refId": "f9d1c003-b832-5d7e-8b12-1cec0e13e1e4",
             "comments": [],
+<<<<<<< HEAD
             "sceneId": "sn-91514e8e-cc60-5df0-81b3-cb06560e1a2c",
             "streamId": "st-fa3c2d6e-128d-5e18-a60a-eca34e4a9132"
         },
@@ -3056,6 +3399,9 @@
             "refId": "9b65a832-df59-5698-b8a3-fc35f15fa4a0",
             "comments": [],
             "sceneId": "sn-47074105-7f4d-52c3-ab50-f450013a5590",
+=======
+            "sceneId": "sn-06c34790-d1bb-5e1a-addd-3b7738c68bdf",
+>>>>>>> 4c25f94a69b84febeb079c783f6a5378d30356b0
             "streamId": "st-fa3c2d6e-128d-5e18-a60a-eca34e4a9132"
         }
     ],
@@ -3085,7 +3431,11 @@
             "groups": [
                 {
                     "groupName": "greetings",
+<<<<<<< HEAD
                     "groupId": "smg-563317ec-f7f7-53a0-9f7c-71fd4c59a12f",
+=======
+                    "groupId": "smg-3b1745f5-4e59-54c1-8256-3bda94c053c8",
+>>>>>>> 4c25f94a69b84febeb079c783f6a5378d30356b0
                     "vNameSpace": [
                         "045b9bbe-b347-5ba8-98e4-1345111adf3a"
                     ],
@@ -3101,25 +3451,41 @@
                                     "channel": "default",
                                     "text": "Glad I could help. ",
                                     "type": "basic",
+<<<<<<< HEAD
                                     "_id": "mt-0a55f08a-e092-578e-8636-96c8c27253f6"
+=======
+                                    "_id": "mt-a890e80a-fd3c-57d0-b7ef-68de0e18a435"
+>>>>>>> 4c25f94a69b84febeb079c783f6a5378d30356b0
                                 },
                                 {
                                     "channel": "default",
                                     "text": "Glad I could be of assistance. ",
                                     "type": "basic",
+<<<<<<< HEAD
                                     "_id": "mt-a5302926-3ff4-582f-8482-9fca5a44b0ef"
+=======
+                                    "_id": "mt-d89ed297-b985-5d51-9677-0c6b0722a1d7"
+>>>>>>> 4c25f94a69b84febeb079c783f6a5378d30356b0
                                 },
                                 {
                                     "channel": "default",
                                     "text": "Glad I could be of some help.",
                                     "type": "basic",
+<<<<<<< HEAD
                                     "_id": "mt-13868a6e-30b8-53b1-8323-3229f58a260a"
+=======
+                                    "_id": "mt-90faa416-d3c7-56ed-97b1-657b26b009b5"
+>>>>>>> 4c25f94a69b84febeb079c783f6a5378d30356b0
                                 },
                                 {
                                     "channel": "default",
                                     "text": "Always great to be able to help. ",
                                     "type": "basic",
+<<<<<<< HEAD
                                     "_id": "mt-7f5add54-11d3-5da7-8744-86e409e9d40e"
+=======
+                                    "_id": "mt-48cd7244-4c89-5b0d-9422-2fb33598b03e"
+>>>>>>> 4c25f94a69b84febeb079c783f6a5378d30356b0
                                 }
                             ],
                             "state": "published",
@@ -3139,7 +3505,11 @@
                                     "channel": "default",
                                     "text": "I'm good. Thank you.",
                                     "type": "basic",
+<<<<<<< HEAD
                                     "_id": "mt-afc14475-fdb5-5a5a-9a7c-0a9110fb7a70"
+=======
+                                    "_id": "mt-5380279c-a9e5-5914-bd62-372a8d55fa76"
+>>>>>>> 4c25f94a69b84febeb079c783f6a5378d30356b0
                                 }
                             ],
                             "state": "published",
@@ -3165,19 +3535,31 @@
                                     "channel": "default",
                                     "text": "Right, then.",
                                     "type": "basic",
+<<<<<<< HEAD
                                     "_id": "mt-bedb5de2-fbf0-5533-b6f1-1eefe4f5d9a4"
+=======
+                                    "_id": "mt-a7573ed2-12d3-5691-b1f0-08eb09e4196a"
+>>>>>>> 4c25f94a69b84febeb079c783f6a5378d30356b0
                                 },
                                 {
                                     "channel": "default",
                                     "text": "OK, great! ",
                                     "type": "basic",
+<<<<<<< HEAD
                                     "_id": "mt-33a16db4-7e40-562c-9521-41480fd5acb0"
+=======
+                                    "_id": "mt-90185100-9ffd-5283-8408-3c87715a8640"
+>>>>>>> 4c25f94a69b84febeb079c783f6a5378d30356b0
                                 },
                                 {
                                     "channel": "default",
                                     "text": "Alright. ",
                                     "type": "basic",
+<<<<<<< HEAD
                                     "_id": "mt-f50d06d8-0d2c-540a-89f9-ed8c02988fe4"
+=======
+                                    "_id": "mt-f0236e27-5994-5f1a-a89a-2c2c56c10b3a"
+>>>>>>> 4c25f94a69b84febeb079c783f6a5378d30356b0
                                 }
                             ],
                             "state": "published",
@@ -3197,13 +3579,21 @@
                                     "channel": "default",
                                     "text": "Have a good one!",
                                     "type": "basic",
+<<<<<<< HEAD
                                     "_id": "mt-e2b64443-380a-5a65-a694-ccd10d855ca5"
+=======
+                                    "_id": "mt-3603a06e-e288-5604-8581-60d807b29cf4"
+>>>>>>> 4c25f94a69b84febeb079c783f6a5378d30356b0
                                 },
                                 {
                                     "channel": "default",
                                     "text": "OK, bye for now! ",
                                     "type": "basic",
+<<<<<<< HEAD
                                     "_id": "mt-5a8f017d-d9ad-591a-ae86-772c6e4aba5e"
+=======
+                                    "_id": "mt-29ef5ccd-be72-5b80-b2ef-5d63b094caea"
+>>>>>>> 4c25f94a69b84febeb079c783f6a5378d30356b0
                                 }
                             ],
                             "state": "published",
@@ -3223,13 +3613,21 @@
                                     "channel": "default",
                                     "text": "Alright. ",
                                     "type": "basic",
+<<<<<<< HEAD
                                     "_id": "mt-4a057cf7-a4f5-5cc8-afb3-edf6376779cb"
+=======
+                                    "_id": "mt-c3654317-b720-58b1-b17c-c2eee8bed0fe"
+>>>>>>> 4c25f94a69b84febeb079c783f6a5378d30356b0
                                 },
                                 {
                                     "channel": "default",
                                     "text": "Right, then.",
                                     "type": "basic",
+<<<<<<< HEAD
                                     "_id": "mt-332902db-45d0-55e8-a163-029a1ebd2162"
+=======
+                                    "_id": "mt-875fbeae-9ad2-5258-b3e9-860fa1c2a719"
+>>>>>>> 4c25f94a69b84febeb079c783f6a5378d30356b0
                                 }
                             ],
                             "state": "published",
@@ -3252,7 +3650,11 @@
                                     "channel": "default",
                                     "text": "You're welcome.",
                                     "type": "basic",
+<<<<<<< HEAD
                                     "_id": "mt-2059d0f3-be29-547c-90d6-34cb95d0dfbf"
+=======
+                                    "_id": "mt-7e9152f9-635a-5e02-80a2-2c0d27cace7a"
+>>>>>>> 4c25f94a69b84febeb079c783f6a5378d30356b0
                                 }
                             ],
                             "state": "published",
@@ -3272,25 +3674,41 @@
                                     "channel": "default",
                                     "text": "Hey :)",
                                     "type": "basic",
+<<<<<<< HEAD
                                     "_id": "mt-3ecaa025-281d-543f-8ba7-24153509bcaf"
+=======
+                                    "_id": "mt-32d6a514-955e-5ca0-9112-a0a4eab08134"
+>>>>>>> 4c25f94a69b84febeb079c783f6a5378d30356b0
                                 },
                                 {
                                     "channel": "default",
                                     "text": "Hello ",
                                     "type": "basic",
+<<<<<<< HEAD
                                     "_id": "mt-5247fec8-bf45-55f0-bf88-2f1d4fd02366"
+=======
+                                    "_id": "mt-ab28579b-514d-5260-9427-6350a8c0139d"
+>>>>>>> 4c25f94a69b84febeb079c783f6a5378d30356b0
                                 },
                                 {
                                     "channel": "default",
                                     "text": "Hi! ",
                                     "type": "basic",
+<<<<<<< HEAD
                                     "_id": "mt-fd63473b-20c4-55c5-a275-3d3049b93147"
+=======
+                                    "_id": "mt-473901fc-30bc-5136-b48d-d588a47ba106"
+>>>>>>> 4c25f94a69b84febeb079c783f6a5378d30356b0
                                 },
                                 {
                                     "channel": "default",
                                     "text": "Hi there! ",
                                     "type": "basic",
+<<<<<<< HEAD
                                     "_id": "mt-31306ea5-ef00-5bc0-b884-335fc9653efe"
+=======
+                                    "_id": "mt-c8ce337e-61d3-5c48-95d6-03238a7eff00"
+>>>>>>> 4c25f94a69b84febeb079c783f6a5378d30356b0
                                 }
                             ],
                             "state": "published",
@@ -3310,13 +3728,21 @@
                                     "channel": "default",
                                     "text": "Alright.",
                                     "type": "basic",
+<<<<<<< HEAD
                                     "_id": "mt-07a16f5d-a637-5f18-9586-fec56cdc32fd"
+=======
+                                    "_id": "mt-633b1612-45d1-523c-a6a5-2df4c6aeb61d"
+>>>>>>> 4c25f94a69b84febeb079c783f6a5378d30356b0
                                 },
                                 {
                                     "channel": "default",
                                     "text": "OK. ",
                                     "type": "basic",
+<<<<<<< HEAD
                                     "_id": "mt-b0460a6c-abf7-5aac-a409-7c749c9bef98"
+=======
+                                    "_id": "mt-609ddff3-f4ed-52c1-85d2-2280ce3284d3"
+>>>>>>> 4c25f94a69b84febeb079c783f6a5378d30356b0
                                 }
                             ],
                             "state": "published",
@@ -3348,7 +3774,11 @@
                                     "channel": "default",
                                     "text": "I'm <display-bot-name>.",
                                     "type": "basic",
+<<<<<<< HEAD
                                     "_id": "mt-380d1566-c109-5c69-a441-9e52e18260d1"
+=======
+                                    "_id": "mt-db5ca78a-1bf1-540c-bc81-f7e5eab18b39"
+>>>>>>> 4c25f94a69b84febeb079c783f6a5378d30356b0
                                 }
                             ],
                             "state": "published",
@@ -3368,13 +3798,21 @@
                                     "channel": "default",
                                     "text": "Glad I could help. ",
                                     "type": "basic",
+<<<<<<< HEAD
                                     "_id": "mt-05966ff2-5908-5dd8-8959-9acf1c19086c"
+=======
+                                    "_id": "mt-99916e9f-d913-56fd-a0e5-4492ee398aca"
+>>>>>>> 4c25f94a69b84febeb079c783f6a5378d30356b0
                                 },
                                 {
                                     "channel": "default",
                                     "text": "Glad you are happy.",
                                     "type": "basic",
+<<<<<<< HEAD
                                     "_id": "mt-cf5b8ec1-9277-5aed-a2a9-8104c0bfd514"
+=======
+                                    "_id": "mt-d1a50615-dc1d-5067-87ab-afbcc3fac1d3"
+>>>>>>> 4c25f94a69b84febeb079c783f6a5378d30356b0
                                 }
                             ],
                             "state": "published",
@@ -3397,6 +3835,7 @@
     "taskDgParamMaps": [],
     "sentences": [
         {
+<<<<<<< HEAD
             "_id": "64b6c53269a34c1944e787c6",
             "taskId": "dc-2a56a76c-b6df-56d4-9d21-a3b7b7b58f39",
             "sentence": "test utterance",
@@ -3410,15 +3849,39 @@
             "taskId": "dc-3779cd78-a838-568b-9f15-4a7c0a0b3ee2",
             "sentence": "welcome to bot",
             "taskName": "Welcome_Task",
+=======
+            "_id": "64be7df61a78b7510b6cace7",
+            "taskId": "dc-2a56a76c-b6df-56d4-9d21-a3b7b7b58f39",
+            "sentence": "New testing Dia",
+            "taskName": "GitTest",
+>>>>>>> 4c25f94a69b84febeb079c783f6a5378d30356b0
             "type": "DialogIntent",
             "entities": [],
             "language": "en"
         },
         {
-            "_id": "64a6bbb70ef864506085b5d5",
-            "taskId": "dc-6b635838-a11c-551f-a919-ced4ca696cc8",
-            "sentence": "sdfasdfasdfasdfasdfasdfasdfasdfsdfasdfasdfasdfasdfasdf",
-            "taskName": "Fallback_Task",
+            "_id": "64be9aa159452a356cc26abf",
+            "taskId": "dc-2a56a76c-b6df-56d4-9d21-a3b7b7b58f39",
+            "sentence": "New test",
+            "taskName": "Test",
+            "type": "DialogIntent",
+            "entities": [],
+            "language": "en"
+        },
+        {
+            "_id": "64be9aa159452a356cc26ac0",
+            "taskId": "dc-2a56a76c-b6df-56d4-9d21-a3b7b7b58f39",
+            "sentence": "hello test",
+            "taskName": "Test",
+            "type": "DialogIntent",
+            "entities": [],
+            "language": "en"
+        },
+        {
+            "_id": "6493f59f756f69f89fd19964",
+            "taskId": "dc-3779cd78-a838-568b-9f15-4a7c0a0b3ee2",
+            "sentence": "welcome to bot",
+            "taskName": "Welcome_Task",
             "type": "DialogIntent",
             "entities": [],
             "language": "en"
@@ -3469,6 +3932,15 @@
             "language": "en"
         },
         {
+            "_id": "64be1f8f2c999e5753912afd",
+            "taskId": "dc-b175f771-c7a4-591f-9428-2b1c0cb557b4",
+            "sentence": "Pay my bill is there",
+            "taskName": "PayMyBill",
+            "type": "DialogIntent",
+            "entities": [],
+            "language": "en"
+        },
+        {
             "_id": "64b50fda41c98a15dd00f5cb",
             "taskId": "dc-d3eba954-0da6-5977-9eb9-a9ebadfd1564",
             "sentence": "Hello I am back",
@@ -3496,6 +3968,7 @@
             "language": "en"
         },
         {
+<<<<<<< HEAD
             "_id": "64b5d647aa17d9161d151fd9",
             "taskId": "dc-e4cd95c3-860a-5a0b-814b-0b9f1efe84ad",
             "sentence": "connect to an agent",
@@ -3518,6 +3991,12 @@
             "taskId": "dc-e4cd95c3-860a-5a0b-814b-0b9f1efe84ad",
             "sentence": "representative",
             "taskName": "Agent_Transfer",
+=======
+            "_id": "64ba52d2c948e9080c21e906",
+            "taskId": "dc-e4cd95c3-860a-5a0b-814b-0b9f1efe84ad",
+            "sentence": "Agent Transfer Utterance",
+            "taskName": "Agent",
+>>>>>>> 4c25f94a69b84febeb079c783f6a5378d30356b0
             "type": "DialogIntent",
             "entities": [],
             "language": "en"
@@ -3612,6 +4091,8 @@
                 "dg-15aa07d9-7c46-5fe2-9073-4b1927f552b2",
                 "dg-8156e38d-4383-56ed-b3a5-550fc9b44467",
                 "dg-4b8df0b9-8f13-50e6-9072-b00d2acf40c8",
+                "dg-0d90b671-bc11-571d-9a4a-fffc976789f8",
+                "dg-15aa07d9-7c46-5fe2-9073-4b1927f552b2",
                 "dg-a1171528-f533-5dbc-ad6f-4211009450d7",
                 "dg-3b2c6068-9b6a-5246-ba69-9fd1d3e4a5ec",
                 "dg-543c371c-5e16-5592-9a5b-81fe494f2ff0",
@@ -3628,5 +4109,9 @@
     "feedbackSurveys": [],
     "environmentVersionInfo": "9.1.7",
     "traits": [],
+<<<<<<< HEAD
     "encryptedHash": "cb626d9788b10508077612ddd3586996"
+=======
+    "encryptedHash": "9230cabea68fb537febf82702dad77d6"
+>>>>>>> 4c25f94a69b84febeb079c783f6a5378d30356b0
 }
